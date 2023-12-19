@@ -71,15 +71,17 @@ if (!$_SESSION['id_user'])
 					<p id="email_redact_profil"><?= $_SESSION['email'] ?></p>
 					</div>
 					<div class="div_redact_profil">
-					<button id="redact_profil" onclick="replace();" class="redact-button">Редактировать</button>
+					<button type="button" id="redact_profil" onclick="replace();" class="redact-button">Редактировать</button>
 					</div>
 				</form>
 			</div>
-		
-			<div class="container-right">
-				<form method="post">
-			<span class="personal-data-auto">Мои заказы</span>
-				</form>
+			<div class="container-right">	
+			<span class="personal-data">Мои заказы</span>
+			<form action="" method="post">
+			<div class="contracts">
+            <div class="list-contract"></div>
+			</div>
+			</form>
 			</div>
 
 		</div>
